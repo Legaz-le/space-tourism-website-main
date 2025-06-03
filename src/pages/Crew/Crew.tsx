@@ -1,4 +1,4 @@
-const Tablet = () => {
+const Crew = () => {
   return (
     <div>
       
@@ -6,4 +6,4 @@ const Tablet = () => {
   )
 }
 
-export default Tablet
+export default Crew

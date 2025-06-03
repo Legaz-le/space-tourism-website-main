@@ -1,23 +1,17 @@
-import fluid, { extract, screens, fontSize } from "fluid-tailwind";
-
 module.exports = {
-  purge: [],
   darkMode: false, // or 'media' or 'class'
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    screens,
-    fontSize,
-    extract,
     extend: {
-      fontFamily: {
-        display: ['"Barlow Condensed"', "sans-serif"],
-        bellefair: ['"Bellefair"', "serif"],
+       backgroundImage: {
+        'home-desktop': "url('/assets/home/background-home-desktop.jpg')",
+        'home-tablet': "url('/assets/home/background-home-tablet.jpg')",
+        'home-mobile': "url('/assets/home/background-home-mobile.jpg')",
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [
-     fluid
-  ],
-};
+  plugins: [],
+}
