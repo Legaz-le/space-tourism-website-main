@@ -1,10 +1,11 @@
 import "../index.css"
-import Desktop from "../pages/Desktop"
+// import Desktop from "../pages/Desktop"
+import Tablet from "../pages/Tablet"
 
 const App = () => {
   return (
-    <div className="">
-      <Desktop/>
+    <div className="overflow">
+      <Tablet />
     </div>
   )
 }

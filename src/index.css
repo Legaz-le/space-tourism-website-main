@@ -3,10 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --font-doto: "Barlow Condensed", 'sans-serif';
+  --font-text: "Bellefair", 'serif';
+}
+
 
 @layer components {
   .bg-desktop {
-    @apply bg-no-repeat bg-cover h-screen;
+    @apply bg-no-repeat bg-cover min-h-screen;
     background-image: url("/assets/home/background-home-desktop.jpg");
   }
   .bg-tablet {
@@ -16,3 +21,4 @@
     background-image: url("../public/assets/home/background-home-mobile.jpg");
   }
 }
+
