@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./index.css";
 import Desktop from "./pages/Home/Homepage";
-import Desination from "./pages/Destination/Desination";
+import Desination from "./pages/Destination/Destination";
 import Crew from "./pages/Crew/Crew";
 import Technology from "./pages/Technology/Technology";
 
