@@ -29,7 +29,7 @@ const Crew_content = ({ data, onSelect, selectedName,allCrew }: Props) => {
             {data.bio}
           </p>
           <ul className="flex mt-20 gap-10 uppercase md:text-[20px] lg:text-[23px] xl:text-2xl font-doto tracking-wide text-white/60 justify-center lg:justify-start ">
-            {allCrew.slice(0, 3).map((member) => (
+            {allCrew.map((member) => (
               <li
                 key={member.name}
                 className={`w-6 h-6 rounded-full cursor-pointer transition-all duration-300 ${
