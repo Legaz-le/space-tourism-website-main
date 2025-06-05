@@ -31,6 +31,9 @@ const Destination_data = () => {
   return (
     <>
       <div className="overflow-hidden">
+        <p className="absolute top-35 lg:left-6 m  xl:left-25 text-3xl  font-doto uppercase tracking-widest text-white">
+            <span className="mr-2 font-doto text-white/20">01</span>Pick your destination
+          </p>
         <Slider {...settings} ref={slider}>
           {data.destinations.map((planet) => (
             <div key={planet.name}>

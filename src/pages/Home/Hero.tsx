@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <>
@@ -20,9 +22,12 @@ const Hero = () => {
 
         {/* Explore Button */}
         <div className="relative group">
+          <Link to="/destination"> 
           <button className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] xl:w-[254px] xl:h-[254px]  xl:w-[] rounded-full bg-white text-black font-bellefair text-xl md:text-3xl uppercase hover:ring-[40px] hover:ring-white/10 transition-all duration-300">
             Explore
           </button>
+          </Link>
+        
         </div>
       </section>
     </>

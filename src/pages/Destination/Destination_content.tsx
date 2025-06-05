@@ -21,10 +21,6 @@ const Destination_content = ({data, onSelect, selectedName }: Props) => {
     <>
       <section className="flex flex-col lg:flex-row text-white items-center justify-center lg:justify-between px-6 lg:px-15   md:py-18  xl:py-35  py-30">
         <div className="relative group md:mb-15 mb-15">
-          <p className="xl:absolute xl:-top-25 xl:-left-0 text-3xl mb-15 font-doto uppercase tracking-widest">
-            <span className="mr-2 font-doto text-white/20">01</span>Pick your
-            destinaiton
-          </p>
           <img
             src={data.images.png}
             alt={`${data.name}-image`}
