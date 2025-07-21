@@ -11,6 +11,12 @@ export default tseslint.config(
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
+       parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+        sourceType: 'module',
+      },
       globals: globals.browser,
     },
     plugins: {
@@ -19,6 +25,7 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
+       ...react.configs.recommended.rules,
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
